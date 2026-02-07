@@ -3,6 +3,12 @@
 
 export const updates = [
   {
+    version: "02.31",
+    changes: [
+      "Transition to block-based architecture started in Version 02.15 has been completed. This fixes a number of bugs with the zoom feature and makes it much faster."
+    ]
+  },
+    {
     version: "02.29",
     changes: [
       "Fixed bug with editor window loading on section zoom"
