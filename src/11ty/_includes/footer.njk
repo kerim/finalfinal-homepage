@@ -1,0 +1,37 @@
+<footer class="py-12 px-4 bg-gray-900 text-white">
+  <div class="container mx-auto max-w-6xl">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <img src="{{ config.logo.src }}" alt="{{ config.title }}" class="h-10 w-10">
+          <span class="text-xl font-bold">{{ config.title }}</span>
+        </div>
+        <p class="text-gray-400">{{ config.description }}</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+          <li><a href="#updates" class="hover:text-white transition-colors">Updates</a></li>
+          <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-lg mb-4">Links</h3>
+        <div class="flex space-x-4">
+          {% for link in config.socialLinks %}
+          <a href="{{ link.url }}" class="text-gray-400 hover:text-white transition-colors" aria-label="{{ link.label }}">
+            {{ link.platform }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+      <p>&copy; {{ "now" | date("YYYY") }} {{ config.title }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
