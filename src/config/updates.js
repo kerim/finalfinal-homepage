@@ -3,37 +3,47 @@
 
 export const updates = [
   {
-    version: "02.31",
+    version: "0.2.52",
+    date: "2026-02-24",
     changes: [
-      "Transition to block-based architecture started in Version 02.15 has been completed. This fixes a number of bugs with the zoom feature and makes it much faster."
-    ]
-  },
-    {
-    version: "02.29",
-    changes: [
-      "Fixed bug with editor window loading on section zoom"
-    ]
-  },
-  {
-    version: "02.25",
-    changes: [
-      "Basic Find & Replace has been added"
+      "GitHub Releases publishing workflow with versioned zip downloads",
+      "CHANGELOG.md in Keep a Changelog format",
+      "AGPL-3.0 license",
+      "README.md updated for GitHub (installation links to Releases, roadmap cleaned up)",
+      "Build script refactored: removes iCloud distribution, outputs versioned zip to build/"
     ]
   },
   {
-    version: "02.19",
+    version: "0.2.49",
     changes: [
-      "Word-count improvements, as well as the addition of word count goals and status markers"
+      "Fullscreen launch bug fixed"
     ]
   },
   {
-    version: "02.17",
+    version: "0.2.48",
     changes: [
-      "Improved zoom mode: Option-double-click zooms to a single section, regular double-click shows section and sub-sections",
-      "Improved focus mode: full screen, hide side bars, hide header and footer, collapse annotations, and remember state on restart or exit"
+      "Cleaned up menus"
+    ]
+  },
+  {
+    version: "0.2.47",
+    changes: [
+      "Toolbars, status bars, pop-up menus, and other UI niceties"
+    ]
+  },
+  {
+    version: "0.2.43",
+    changes: [
+      "Footnotes"
+    ]
+  },
+  {
+    version: "0.2.42",
+    changes: [
+      "Improved grammar and spell check, skipping annotations, citations, and non-latin script"
     ]
   }
 ];
 
 // Optional: Link to full changelog page
-export const changelogUrl = "#";
+export const changelogUrl = "https://github.com/kerim/finalfinal/blob/main/CHANGELOG.md";

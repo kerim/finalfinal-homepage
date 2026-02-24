@@ -6,7 +6,7 @@ export const faq = [
   },
   {
     question: "How do I install it?",
-    answer: "Download the zip file, extract the app, and move it to /Applications. On first launch, right-click and choose Open to bypass Gatekeeper, since the app isn't notarized yet."
+    answer: "Download the latest release from <a href='https://github.com/kerim/finalfinal/releases/latest' class='text-blue-600 dark:text-blue-400 hover:underline'>GitHub Releases</a>. Extract the zip, move the app to /Applications, then right-click and choose Open on first launch to bypass Gatekeeper (the app isn't notarized yet)."
   },
   {
     question: "What external tools does it work with?",
@@ -14,7 +14,7 @@ export const faq = [
   },
   {
     question: "Is it stable enough to use for real work?",
-    answer: "FINAL|FINAL is alpha software. Most core features are implemented and working, but some polish features like toolbars, spell checking, and keyboard shortcuts are still coming. Use with caution and keep backups."
+    answer: "FINAL|FINAL is alpha software. Core features are implemented and working, including outlining, citations, versioning, focus mode, toolbars, spell check, footnotes, and export. Use with caution and keep backups."
   },
   {
     question: "What platforms does it support?",
@@ -22,6 +22,6 @@ export const faq = [
   },
   {
     question: "How can I give feedback or report bugs?",
-    answer: "Feedback and bug reports can be submitted on the project's GitHub issues page. We'd love to hear from you!"
+    answer: "Feedback and bug reports can be submitted on the project's <a href='https://github.com/kerim/finalfinal/issues' class='text-blue-600 dark:text-blue-400 hover:underline'>GitHub issues page</a>. We'd love to hear from you!"
   }
 ];

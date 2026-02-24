@@ -39,5 +39,25 @@ export const features = [
     title: "Theming",
     description: "Customize every aspect of how it looks — fonts, colors, and spacing — to suit your personal preferences.",
     icon: "🎨"
+  },
+  {
+    title: "Footnotes",
+    description: "Insert footnotes that are automatically numbered and collected at the end of the document.",
+    icon: "🔢"
+  },
+  {
+    title: "Grammar & Spell Check",
+    description: "Built-in spell check plus optional LanguageTool integration for enhanced grammar and style checking.",
+    icon: "✅"
+  },
+  {
+    title: "Toolbars",
+    description: "Selection toolbar for quick formatting, Format menu, and a status bar showing word count and document statistics.",
+    icon: "🔧"
+  },
+  {
+    title: "Export",
+    description: "Export to Markdown, Word, or PDF. Word export preserves Zotero citation markers for further editing.",
+    icon: "📤"
   }
 ];
