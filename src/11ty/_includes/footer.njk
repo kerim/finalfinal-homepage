@@ -13,20 +13,19 @@
         <h3 class="font-bold text-lg mb-4">Quick Links</h3>
         <ul class="space-y-2 text-gray-400">
           <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
-          <li><a href="#updates" class="hover:text-white transition-colors">Updates</a></li>
           <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
         </ul>
       </div>
 
       <div>
         <h3 class="font-bold text-lg mb-4">Links</h3>
-        <div class="flex space-x-4">
+        <ul class="space-y-2 text-gray-400">
           {% for link in config.socialLinks %}
-          <a href="{{ link.url }}" class="text-gray-400 hover:text-white transition-colors" aria-label="{{ link.label }}">
+          <li><a href="{{ link.url }}" class="hover:text-white transition-colors" aria-label="{{ link.label }}">
             {{ link.platform }}
-          </a>
+          </a></li>
           {% endfor %}
-        </div>
+        </ul>
       </div>
     </div>
 
