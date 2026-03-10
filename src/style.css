@@ -90,3 +90,13 @@
 #screenshot-lightbox button:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* Zoomable image hover effect */
+[data-zoomable] {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+[data-zoomable]:hover {
+  transform: scale(1.02);
+  filter: brightness(1.05);
+}
