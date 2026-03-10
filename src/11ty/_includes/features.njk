@@ -1,18 +1,36 @@
 <section id="features" class="py-20 px-4 bg-gray-50 dark:bg-gray-800">
   <div class="container mx-auto max-w-6xl">
+
+    {# Intro #}
     <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Features</h2>
-      <p class="text-xl text-gray-600 dark:text-gray-400">FINAL|FINAL is built for humans</p>
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Welcome to FINAL|FINAL!</h2>
+      <p class="text-xl text-gray-600 dark:text-gray-400 max-w-prose mx-auto">
+        There are dozens of "distraction free"  word processors that let you "focus" on your writing. The problem is that focus isn't just about hiding visual distractions. It is about maintaining flow. If your app doesn't have all the features someone needs to write, they will get distracted because they have to leave your app to do that task somewhere else. FINAL|FINAL offers you the tool you need, when you need them, so you can stay focused. It is also highly customizable, allowing you to hide the features you don't use.
+      </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {# App Highlights #}
+    <div class="text-center mb-12 p-6 rounded-xl bg-gray-100 dark:bg-gray-700/50">
+      <h3 class="text-3xl font-bold mb-4">App Highlights</h3>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-prose mx-auto">
+        Here are some of the many features which make FINAL|FINAL special. While you might find some of these features elsewhere, no other app has them all!
+      </p>
+    </div>
+
+    {# Feature rows #}
+    <div class="flex flex-col gap-8 md:gap-12">
       {% for feature in config.features %}
-      <div class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-        <div class="text-5xl mb-4">{{ feature.icon }}</div>
-        <h3 class="text-2xl font-bold mb-3">{{ feature.title }}</h3>
-        <p class="text-gray-600 dark:text-gray-400">{{ feature.description }}</p>
+      <div class="flex flex-col {% if loop.index0 % 2 == 0 %}md:flex-row{% else %}md:flex-row-reverse{% endif %} items-center gap-6 md:gap-8 p-6 rounded-xl {% if loop.index0 % 2 == 1 %}bg-gray-100 dark:bg-gray-700/50{% endif %}">
+        <div class="md:w-1/2 max-w-prose">
+          <h4 class="text-2xl font-bold mb-3">{{ feature.title }}</h4>
+          <p class="text-gray-600 dark:text-gray-400">{{ feature.description }}</p>
+        </div>
+        <div class="md:w-1/2">
+          <img src="{{ feature.image }}" alt="{{ feature.imageAlt }}" width="600" height="400" class="w-full rounded-xl" loading="lazy">
+        </div>
       </div>
       {% endfor %}
     </div>
+
   </div>
 </section>
