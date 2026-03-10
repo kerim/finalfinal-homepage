@@ -3,10 +3,11 @@
 
     {# Intro #}
     <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6">Welcome to FINAL|FINAL!</h2>
-      <p class="text-xl text-gray-600 dark:text-gray-400 max-w-prose mx-auto">
-        There are dozens of "distraction free"  word processors that let you "focus" on your writing. The problem is that focus isn't just about hiding visual distractions. It is about maintaining flow. If your app doesn't have all the features someone needs to write, they will get distracted because they have to leave your app to do that task somewhere else. FINAL|FINAL offers you the tool you need, when you need them, so you can stay focused. It is also highly customizable, allowing you to hide the features you don't use.
-      </p>
+      <img src="/images/welcome-intro.png"
+           alt="Welcome to FINAL|FINAL! There are dozens of &quot;distraction free&quot; word processors that let you &quot;focus&quot; on your writing. The problem is that focus isn't just about hiding visual distractions. It is about maintaining flow. If your app doesn't have all the features someone needs to write, they will get distracted because they have to leave your app to do that task somewhere else. FINAL|FINAL offers you the tool you need, when you need them, so you can stay focused. It is also highly customizable, allowing you to hide the features you don't use."
+           class="w-full max-w-4xl mx-auto rounded-xl cursor-pointer"
+           data-zoomable
+           loading="eager">
     </div>
 
     {# App Highlights #}
@@ -26,11 +27,16 @@
           <p class="text-gray-600 dark:text-gray-400">{{ feature.description }}</p>
         </div>
         <div class="md:w-1/2">
-          <img src="{{ feature.image }}" alt="{{ feature.imageAlt }}" width="600" height="400" class="w-full rounded-xl" loading="lazy">
+          <img src="{{ feature.image }}" alt="{{ feature.imageAlt }}" width="600" height="400" class="w-full rounded-xl cursor-pointer" data-zoomable loading="lazy">
         </div>
       </div>
       {% endfor %}
     </div>
 
+  </div>
+
+  {# Image zoom overlay #}
+  <div id="image-zoom-overlay" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/70 cursor-pointer" style="animation: fadeIn 0.3s ease-out;">
+    <img id="image-zoom-img" src="" alt="" class="rounded-xl" style="animation: zoomIn 0.3s ease-out;">
   </div>
 </section>
