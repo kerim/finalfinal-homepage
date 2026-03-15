@@ -6,10 +6,10 @@
     </div>
 
     <div class="space-y-6">
-      {% for item in config.faqs %}
+      {% for item in faqs %}
       <div class="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg">
         <h3 class="text-xl font-bold mb-3">{{ item.question }}</h3>
-        <p class="text-gray-600 dark:text-gray-400">{{ item.answer | safe }}</p>
+        <p class="text-gray-600 dark:text-gray-400">{{ item.answer | renderLinks | safe }}</p>
       </div>
       {% endfor %}
     </div>

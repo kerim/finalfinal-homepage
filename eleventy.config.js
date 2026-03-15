@@ -1,6 +1,10 @@
 import { EleventyI18nPlugin } from "@11ty/eleventy";
+import yaml from "js-yaml";
 
 export default function(eleventyConfig) {
+  // Support YAML data files
+  eleventyConfig.addDataExtension("yaml,yml", (contents) => yaml.load(contents));
+
   // Add i18n plugin for multi-language support
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
     defaultLanguage: "en",
@@ -16,6 +20,11 @@ export default function(eleventyConfig) {
     description: "A writing app for academics who need outlining, citations, versioning, and focus — all in one place.",
     url: "https://finalfinal-homepage.pages.dev",
     author: "P. Kerim Friedman"
+  });
+
+  // Convert markdown-style links to HTML anchor tags
+  eleventyConfig.addFilter("renderLinks", function(text) {
+    return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
   });
 
   // Date filter for formatting dates

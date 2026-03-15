@@ -91,6 +91,17 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* FAQ link styles */
+#faq a {
+  @apply text-blue-600 hover:underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  #faq a {
+    @apply text-blue-400;
+  }
+}
+
 /* Zoomable image hover effect */
 [data-zoomable] {
   transition: transform 0.2s ease, filter 0.2s ease;
