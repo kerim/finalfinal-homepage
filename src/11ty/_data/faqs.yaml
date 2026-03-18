@@ -9,6 +9,9 @@
 
 - question: Is FINAL|FINAL open source?
   answer: "Yes, it is published under a AGPL-3.0 license. Click on the Github link at the top of the page to see the source code."
+  
+- question: Will you port this to other platforms such as Windows or Linux? Can I?
+  answer: "That's a tough one. I've written a [blog post](https://vibing.kerim.one/posts/2026-03-18-porting/) to answer this question."
 
 - question: What is your privacy policy?
   answer: "I do not collect statistics or user information of any kind. Of course, if you contact me for help then I will have a record of that request, but that's it."
