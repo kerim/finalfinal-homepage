@@ -4,11 +4,11 @@
         <title>FINAL|FINAL</title>
         <item>
             <title>1</title>
-            <pubDate>Sun, 30 Aug 2026 22:08:30 +0530</pubDate>
-            <sparkle:version>0.2.129</sparkle:version>
+            <pubDate>Tue, 01 Sep 2026 14:19:17 +0530</pubDate>
+            <sparkle:version>0.2.130</sparkle:version>
             <sparkle:shortVersionString>1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/kerim/finalfinal/releases/download/v0.2.129/FINAL-FINAL-v0.2.129.zip" length="118551029" type="application/octet-stream" sparkle:edSignature="e0wk2lR0auw/sxy6fy1IEN3sMiMB6RcaVcm50jlhkrbbRJyfcnlQTzhlMIUN+xhWTkWdt2LYnQrikIexysDUCA=="/>
+            <enclosure url="https://github.com/kerim/finalfinal/releases/download/v0.2.130/FINAL-FINAL-v0.2.130.zip" length="118595901" type="application/octet-stream" sparkle:edSignature="KDo9VpMScTdpXeUAsbJKP3ZaM0qomwr51U8/ZolTufYZGM5DY9jLvimrxLHWixGS3oM5uajY5+FqpZuUujGrCQ=="/>
         </item>
     </channel>
 </rss>
